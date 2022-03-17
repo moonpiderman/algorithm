@@ -42,4 +42,5 @@ class GcdLcm {
 
         return answer
     }
+    // run 구현해볼 것
 }
