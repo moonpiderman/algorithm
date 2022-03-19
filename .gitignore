@@ -6,3 +6,5 @@ build.gradle.kts
 gradlew
 gradle.properties
 gradlew.bat
+
+src/main/kotlin/programmers/test/**
