@@ -37,6 +37,8 @@ public class CutCake {
             }
         }
 
+        int p = 1;
+
         return fairCutCount;
     }
 }
