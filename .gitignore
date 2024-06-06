@@ -5,5 +5,7 @@ gradle
 gradlew
 gradlew.bat
 
+out
+
 src/main/kotlin/programmers/test/socar
 src/main/kotlin/codility/test/class101
