@@ -52,7 +52,6 @@ public class ThereThird {
     public int[] solution(String[] replies, int n, int k) {
         int[] answer = new int[replies.length];
         for (int i = 0; i < replies.length; i++) {
-
             if (i == 3) {
                 int p = 1;
             }
@@ -65,8 +64,16 @@ public class ThereThird {
                     int count = 0;
                     int index = 0;
                     while ((index = reply.indexOf(pattern, index)) != -1) {
-                        count++;
+                        if (index - start <= 1) {
+                            count++;
+                        } else {
+                            count = 0;
+                        }
                         index += len;
+                        if (count >= k) {
+                            isBad = true;
+                            break;
+                        }
                     }
                     if (count >= k) {
                         isBad = true;
